@@ -19,6 +19,7 @@ import Home from './components/Home/Home';
 import Screen2 from './components/Screen2/Screen2';
 import Screen3 from './components/Screen3/Screen3';
 import Screen4 from './components/Screen4/Screen4';
+import Screen5 from './components/Screen5/Screen5';
 
 const Stack = createStackNavigator();
 
@@ -69,6 +70,7 @@ export default function App(props) {
             <Route path="/screen2" exact component={Screen2} />
             <Route path="/screen3" exact component={Screen3} />
             <Route path="/screen4" exact component={Screen4} />
+            <Route path="/screen5" exact component={Screen5} />
           </Switch>
         </BrowserRouter>
 

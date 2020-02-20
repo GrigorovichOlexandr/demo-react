@@ -23,7 +23,7 @@ export default function Screen4 (){
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = (data, e) => {
         e.preventDefault();
-        console.log(data);
+        this.props.history.push("/screen4");
     };
 
     const classes = useStyles();
