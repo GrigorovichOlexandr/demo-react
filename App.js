@@ -12,7 +12,13 @@ import BottomTabNavigator from './navigation/BottomTabNavigator';
 import useLinking from './navigation/useLinking';
 
 
+import './style.css';
+
+
 import Home from './components/Home/Home';
+import Screen2 from './components/Screen2/Screen2';
+import Screen3 from './components/Screen3/Screen3';
+import Screen4 from './components/Screen4/Screen4';
 
 const Stack = createStackNavigator();
 
@@ -34,7 +40,9 @@ export default function App(props) {
         // Load fonts
         await Font.loadAsync({
           ...Ionicons.font,
-          'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+          'SFP-bold': require('./assets/fonts/SFProDisplay-Bold.ttf'),
+          'SFP': require('./assets/fonts/SFProDisplay-Regular.ttf'),
+          'SFP-semi': require('./assets/fonts/SFProDisplay-Semibold.ttf'),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
@@ -57,7 +65,10 @@ export default function App(props) {
 
         <BrowserRouter>
           <Switch>
-            <Route path="/home" component={Home} />
+            <Route path="/" exact component={Home} />
+            <Route path="/screen2" exact component={Screen2} />
+            <Route path="/screen3" exact component={Screen3} />
+            <Route path="/screen4" exact component={Screen4} />
           </Switch>
         </BrowserRouter>
 
