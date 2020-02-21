@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 
 import img from "../../assets/images/avatar.png";
 
-export default class Screen5 extends Component {
+export default class Screen6 extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         this.props.history.push("/screen6");
@@ -28,6 +28,7 @@ export default class Screen5 extends Component {
                                     type="text"
                                     name="name"
                                     margin="normal"
+                                    value="Jane Doe"
                                 />
                             </div>
                             <div className="form_box">
@@ -37,6 +38,7 @@ export default class Screen5 extends Component {
                                     type="number"
                                     name="age"
                                     margin="normal"
+                                    value="23"
                                 />
                             </div>
                             <div className="form_box_2">
@@ -46,6 +48,7 @@ export default class Screen5 extends Component {
                                     type="number"
                                     name="from"
                                     margin="normal"
+                                    value="$900"
                                 />
                             </div>
                             <div className="form_box_2">
@@ -55,6 +58,7 @@ export default class Screen5 extends Component {
                                     type="number"
                                     name="to"
                                     margin="normal"
+                                    value="Jane Doe"
                                 />
                             </div>
                             <div className="form_box">
@@ -65,6 +69,7 @@ export default class Screen5 extends Component {
                                     name="email"
                                     autoComplete="email"
                                     margin="normal"
+                                    value="jane@doe.com"
                                 />
                             </div>
                             <div className="form_box">
@@ -74,6 +79,7 @@ export default class Screen5 extends Component {
                                     type="number"
                                     name="phone-number"
                                     margin="normal"
+                                    value="(123)-456-7890"
                                 />
                             </div>
                             <div className="form_box">
@@ -83,6 +89,7 @@ export default class Screen5 extends Component {
                                     type="text"
                                     name="password"
                                     margin="normal"
+                                    value="p4$$word321"
                                 />
                             </div>
                             <div className="form_box">
@@ -92,6 +99,7 @@ export default class Screen5 extends Component {
                                     type="text"
                                     name="repeat-password"
                                     margin="normal"
+                                    value="*********"
                                 />
                             </div>
 
